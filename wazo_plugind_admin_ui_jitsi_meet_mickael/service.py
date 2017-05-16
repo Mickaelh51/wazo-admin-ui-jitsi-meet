@@ -4,3 +4,4 @@
 
 
 class JitsiMeetService(object):
+    pass
