@@ -1,4 +1,4 @@
 # wazo-admin-ui-jitsi-meet
 Simple panel to use jitsi meet into wazo PBX
 
-![alt text](http://hpics.li/ab3a7c4)
+!(http://www.hostingpics.net/viewer.php?id=283383jitsiwazopoc01.png)
