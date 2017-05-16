@@ -1,0 +1,2 @@
+recursive-include wazo_plugind_admin_ui_jitsi_meet_mickael/templates *
+recursive-include wazo_plugind_admin_ui_jitsi_meet_mickael/static *
