@@ -1,12 +1,14 @@
 #!/bin/sh
-# Copyright 2017 The Wazo Authors  (see the AUTHORS file)
-# SPDX-License-Identifier: GPL-3.0+
+# Copyright 2017 HUBERT Mickael  (see the AUTHORS file)
+# SPDX-License-Identifier: MIT
 
 case "$1" in
     build)
         ;;
 
     package)
+        cp -R wazo_plugind_admin_ui_jitsi_meet_nonofficial ${pkgdir}/
+        cp -R etc ${pkgdir}/
         ;;
 
     install)

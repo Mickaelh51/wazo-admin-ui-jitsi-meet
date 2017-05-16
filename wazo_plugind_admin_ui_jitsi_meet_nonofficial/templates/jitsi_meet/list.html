@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block content_header %}
+  {{ build_breadcrumb('Jitsi Meet Video Conferencing', '', 'compress', ['List']) }}
+{% endblock %}
+
+{% block content %}
+  <section class="content">
+    {% call build_list_containers('Jitsi Meet Video Conferencing', 'compress', size='12', add_button=False) %}
+      test mika
+    {% endcall %}
+  </section>
+{% endblock %}
