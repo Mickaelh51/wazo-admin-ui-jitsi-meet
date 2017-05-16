@@ -8,7 +8,7 @@ case "$1" in
         ;;
 
     package)
-        cp -R wazo_plugind_admin_ui_jitsi_meet_nonofficial-*.tar.gz ${pkgdir}/
+        cp -R wazo_admin_ui_jit_meet_mickael-*.tar.gz ${pkgdir}/
         cp -R etc ${pkgdir}/
         ;;
 
