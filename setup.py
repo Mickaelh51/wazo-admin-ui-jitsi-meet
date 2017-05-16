@@ -10,10 +10,10 @@ setup(
     name='wazo_admin_ui_jit_meet_mickael',
     version='0.1',
 
-    description='Wazo Admin UI Jit Meet',
+    description='Wazo Admin UI Jitsi Meet',
 
     author='Mickael HUBERT',
-    author_email='',
+    author_email='github@winlux.fr',
 
     url='https://github.com/Mickaelh51/wazo-admin-ui-jitsi-meet',
 
