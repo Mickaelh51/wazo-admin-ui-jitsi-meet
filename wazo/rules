@@ -8,7 +8,7 @@ case "$1" in
         ;;
 
     package)
-        cp -R wazo_admin_ui_jit_meet_mickael-*.tar.gz ${pkgdir}/
+        tar xfv dist/wazo_admin_ui_jit_meet_mickael-*.tar.gz -C ${pkgdir}/
         cp -R etc ${pkgdir}/
         ;;
 
