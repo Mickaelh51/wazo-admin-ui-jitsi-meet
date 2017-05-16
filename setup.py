@@ -23,7 +23,7 @@ setup(
 
     entry_points={
         'wazo_admin_ui.plugins': [
-            'jit_meet = wazo_plugind_admin_ui_jitsi_meet_mickael.plugin:Plugin',
+            'jitsi_meet = wazo_plugind_admin_ui_jitsi_meet_mickael.plugin:Plugin',
         ]
     }
 )
