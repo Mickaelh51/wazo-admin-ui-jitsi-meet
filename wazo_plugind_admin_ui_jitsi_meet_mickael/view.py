@@ -8,10 +8,12 @@ from flask_menu.classy import classy_menu_item
 
 from wazo_admin_ui.helpers.classful import BaseView, IndexAjaxViewMixin
 
+from .form import JitsiMeetForm
+
 
 class JitsiMeetView(IndexAjaxViewMixin, BaseView):
 
-    form = object
+    form = JitsiMeetForm
     resource = 'jitsi-meet'
 
     @classy_menu_item('.jistmeet', 'Jitsi Meet', order=4, icon="compress")
