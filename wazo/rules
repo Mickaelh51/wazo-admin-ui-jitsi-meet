@@ -4,10 +4,11 @@
 
 case "$1" in
     build)
+        python setup.py bdist
         ;;
 
     package)
-        cp -R wazo_plugind_admin_ui_jitsi_meet_nonofficial ${pkgdir}/
+        cp -R wazo_plugind_admin_ui_jitsi_meet_nonofficial-*.tar.gz ${pkgdir}/
         cp -R etc ${pkgdir}/
         ;;
 
@@ -16,7 +17,6 @@ case "$1" in
         ;;
 
     uninstall)
-        rm -f /etc/wazo-admin-ui/conf.d/50-wazo-plugin-parking-lot.yml
         systemctl restart wazo-admin-ui
         ;;
 
