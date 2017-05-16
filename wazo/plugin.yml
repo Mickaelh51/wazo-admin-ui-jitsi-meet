@@ -1,0 +1,9 @@
+name: admin-ui-jitsi-meet
+namespace: non-official
+version: 0.0.1
+author: Mickael HUBERT
+display_name: Jitsi Meet
+tags:
+  - beta
+  - application
+homepage: https://github.com/Mickaelh51/wazo-admin-ui-jitsi-meet

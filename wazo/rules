@@ -1,0 +1,25 @@
+#!/bin/sh
+# Copyright 2017 The Wazo Authors  (see the AUTHORS file)
+# SPDX-License-Identifier: GPL-3.0+
+
+case "$1" in
+    build)
+        ;;
+
+    package)
+        ;;
+
+    install)
+        systemctl restart wazo-admin-ui
+        ;;
+
+    uninstall)
+        rm -f /etc/wazo-admin-ui/conf.d/50-wazo-plugin-parking-lot.yml
+        systemctl restart wazo-admin-ui
+        ;;
+
+    *)
+        echo "$0 called with unknown argument '$1'" >&2
+        exit 1
+    ;;
+esac
