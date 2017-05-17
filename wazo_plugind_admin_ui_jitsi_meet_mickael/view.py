@@ -22,6 +22,5 @@ class JitsiMeetView(IndexAjaxViewMixin, BaseView):
 
 
     def _map_resources_to_form(self, resource):
-        print "ressource" + str(resource)
         form = self.form(data=resource)
         return form

@@ -15,10 +15,11 @@
           {{ render_field(form.app_id) }}
           {{ render_field(form.firefox_plugin) }}
           {{ render_field(form.chrome_plugin) }}
+          {% if resource.url_token %}
+            <a href="{{ resource.url_token }}" target="_blank">You can test the Jitsi Meet URL with this link</a>
+          {% endif %}
         {% endcall %}
       {% endcall %}
     {% endcall %}
   {% endcall %}
-    {{ url_token }}
-    <br><a href="{{ url_token }}" target="_blank">You can test the Jitsi Meet URL with this link</a>
 {% endblock %}
