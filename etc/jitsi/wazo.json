@@ -1,0 +1,8 @@
+{
+    "firefox_plugin": null,
+    "app_id": null,
+    "jitsi_url": "https://meet.jit.si", 
+    "secret_id": null,
+    "chrome_plugin": null,
+    "auth_method": "anonymous"
+}

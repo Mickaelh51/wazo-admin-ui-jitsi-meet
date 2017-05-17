@@ -17,6 +17,7 @@ case "$1" in
         ;;
 
     uninstall)
+        rm -f /etc/wazo-admin-ui/conf.d/050-wazo-plugin-jitsi-meet.yml
         systemctl restart wazo-admin-ui
         ;;
 

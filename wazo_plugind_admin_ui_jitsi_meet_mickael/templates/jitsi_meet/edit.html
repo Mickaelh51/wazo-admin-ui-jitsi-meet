@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block content_header %}
+  {{ build_breadcrumb('Jitsi Meet', '', 'compress', ['Edit']) }}
+{% endblock %}
+
+{% block content %}
+  {% call build_section_row() %}
+    {% call build_form_box('Jitsi Meet instance configuration', '', 'bar-chart') %}
+      {% call build_form(action=url_for('.JitsiMeetView:put', id='no-id')) %}
+        {% call add_default_fields(form=form, submit_value="Update") %}
+          {{ render_field(form.jitsi_url) }}
+          {{ render_field(form.auth_method) }}
+          {{ render_field(form.secret_id) }}
+          {{ render_field(form.app_id) }}
+          {{ render_field(form.firefox_plugin) }}
+          {{ render_field(form.chrome_plugin) }}
+          {% if resource.url_token %}
+            <a href="{{ resource.url_token }}" target="_blank">You can test the Jitsi Meet URL with this link</a>
+          {% endif %}
+        {% endcall %}
+      {% endcall %}
+    {% endcall %}
+  {% endcall %}
+{% endblock %}
