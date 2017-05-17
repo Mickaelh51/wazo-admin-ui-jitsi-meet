@@ -21,8 +21,8 @@ class JitsiMeetForm(BaseForm):
                            validators=[InputRequired()],
                            choices=[
                                ('anonymous', 'Anonymous (without token)'),
-                               ('old_token', 'Token (#conf.token)'),
-                               ('new_token', 'Token (?jwt=)')
+                               ('old_token', 'Old token method (#conf.token)'),
+                               ('new_token', 'New token method (?jwt=)')
                            ])
     firefox_plugin = URLField('Url for firefox plugin', [])
     chrome_plugin = URLField('Url for Chrome plugin', [])
