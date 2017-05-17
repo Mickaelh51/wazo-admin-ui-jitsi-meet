@@ -10,6 +10,7 @@ case "$1" in
     package)
         tar xfv dist/wazo_admin_ui_jit_meet_mickael-*.tar.gz -C ${pkgdir}/
         cp -R etc ${pkgdir}/
+        chown wazo-admin-ui /etc/jitsi/wazo.json
         ;;
 
     install)
